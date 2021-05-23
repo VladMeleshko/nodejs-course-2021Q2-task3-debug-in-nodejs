@@ -12,7 +12,7 @@ router.get('/all', (req, res) => {
             },
 
             function findFail() {
-                res.status(500).json({
+                res.status(404).json({
                     message: "Data not found"
                 })
             }
